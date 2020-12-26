@@ -7,7 +7,7 @@ makedocs(
     format=Documenter.HTML(
         prettyurls=get(ENV, "CI", nothing) == "true"
     ),
-    modules=[IDSGraphs],
+    modules=[CEDICT],
     pages=[
         "Home" => "index.md"
     ]
