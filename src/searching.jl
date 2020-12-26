@@ -1,6 +1,6 @@
 using Pipe
 
-function searchfiltered(filter_func, dict::LookupDictionary)
+function search_filtered(filter_func, dict::LookupDictionary)
     word_entries = Set{DictionaryEntry}()
 
     for entry_list in values(dict)
@@ -12,25 +12,25 @@ function searchfiltered(filter_func, dict::LookupDictionary)
     word_entries
 end
 
-searchheadwords(dict::LookupDictionary, keyword) =
-    searchfiltered(dict) do entry
+search_headwords(dict::LookupDictionary, keyword) =
+    search_filtered(dict) do entry
         occursin(keyword, entry.trad) || occursin(keyword, entry.simp)
     end
 
-searchsenses(dict::LookupDictionary, keyword) =
-    searchfiltered(dict) do entry
+search_senses(dict::LookupDictionary, keyword) =
+    search_filtered(dict) do entry
         any(occursin.(keyword, entry.senses))
     end
 
 """
-    searchpinyin(dict, keyword)
+    search_pinyin(dict, keyword)
 
 Search the dictionary for terms that fuzzy match the pinyin search key provided.
 The language that is understood for the search key is described below.
 
 # Examples
 ```julia-repl
-julia> searchpinyin(dict, "yi2 han4") .|> println;
+julia> search_pinyin(dict, "yi2 han4") .|> println;
 遺憾 (遗憾): [yi2 han4]
         regret
         to regret
@@ -47,27 +47,27 @@ In addition, when used on their own,
 
 For example,
 ```julia-repl
-julia> searchpinyin(dict, "si ma dang huo ma yi") .|> println;
+julia> search_pinyin(dict, "si ma dang huo ma yi") .|> println;
 死馬當活馬醫 (死马当活马医): [si3 ma3 dang4 huo2 ma3 yi1]
         lit. to give medicine to a dead horse (idiom)
         fig. to keep trying everything in a desperate situation
-julia> searchpinyin(dict, "si ma dang ? ma yi") .|> println;
+julia> search_pinyin(dict, "si ma dang ? ma yi") .|> println;
 死馬當活馬醫 (死马当活马医): [si3 ma3 dang4 huo2 ma3 yi1]
         lit. to give medicine to a dead horse (idiom)
         fig. to keep trying everything in a desperate situation
-julia> searchpinyin(dict, "si + ma yi") .|> println;
+julia> search_pinyin(dict, "si + ma yi") .|> println;
 死馬當活馬醫 (死马当活马医): [si3 ma3 dang4 huo2 ma3 yi1]
         lit. to give medicine to a dead horse (idiom)
         fig. to keep trying everything in a desperate situation
-julia> searchpinyin(dict, "si ma dang * huo ma yi") .|> println;
+julia> search_pinyin(dict, "si ma dang * huo ma yi") .|> println;
 死馬當活馬醫 (死马当活马医): [si3 ma3 dang4 huo2 ma3 yi1]
         lit. to give medicine to a dead horse (idiom)
         fig. to keep trying everything in a desperate situation
 ```
 """
-function searchpinyin(dict::LookupDictionary, pinyin_searchkey)
+function search_pinyin(dict::LookupDictionary, pinyin_searchkey)
     search_regex = _convert_pinyin_regex(pinyin_searchkey)
-    searchfiltered(dict) do entry
+    search_filtered(dict) do entry
         match(search_regex, entry.pinyin) != nothing
     end
 end
