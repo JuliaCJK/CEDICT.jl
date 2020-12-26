@@ -9,7 +9,11 @@ makedocs(
     ),
     modules=[CEDICT],
     pages=[
-        "Home" => "index.md"
+        "Home" => "index.md",
+        "API Reference" => [
+            "Loading Dictionaries" => "api_dictionaries.md",
+            "Searching in Dictionaries" => "api_searching.md"
+        ]
     ]
 )
 

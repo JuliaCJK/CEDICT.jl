@@ -16,6 +16,17 @@ end
 
 const LookupDictionary = Dict{SubString, Vector{DictionaryEntry}}
 
+"""
+    load_dictionary([filename])
+
+Load a text-based dictionary either from the default dictionary file or from the provided
+filename. The format of the text file must be the same as
+[that used by the CC-CEDICT project](https://cc-cedict.org/wiki/format:syntax) for
+compatibility reasons.
+
+For general use, it's the easiest to just use the default dictionary (from the CC-CEDICT project).
+This is loaded if you don't specify a filename.
+"""
 function load_dictionary(filename = joinpath(artifact"CE-Dict", "cedict_ts.u8"))
     dict = LookupDictionary()
     pattern = r"^([^#\s]+) ([^\s]+) \[(.*)\] /(.+)/$"
