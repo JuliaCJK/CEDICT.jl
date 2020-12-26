@@ -1,0 +1,79 @@
+# CC-CEDICT
+# Community maintained free Chinese-English dictionary.
+#
+# More mini, down selected version for testing.
+亦步亦趨 亦步亦趋 [yi4 bu4 yi4 qu1] /to blindly follow suit (idiom)/to imitate slavishly/to do what everyone else is doing/
+人是鐵飯是鋼 人是铁饭是钢 [ren2 shi4 tie3 fan4 shi4 gang1] /one can't function properly on an empty stomach (idiom)/an empty sack cannot stand upright/
+仁術 仁术 [ren2 shu4] /kindness/benevolence/to govern in humanitarian way/
+代數拓撲 代数拓扑 [dai4 shu4 tuo4 pu1] /algebraic topology (math.)/
+伏流 伏流 [fu2 liu2] /hidden stream/ground stream/
+佛塔 佛塔 [fo2 ta3] /pagoda/
+使困擾 使困扰 [shi3 kun4 rao3] /to harass/
+倒寫 倒写 [dao4 xie3] /mirror writing/upside down writing/
+做事 做事 [zuo4 shi4] /to work/to handle matters/to have a job/
+傳唱 传唱 [chuan2 chang4] /to pass on a song/
+全天 全天 [quan2 tian1] /whole day/
+出奇制勝 出奇制胜 [chu1 qi2 zhi4 sheng4] /to win by a surprise move/
+加添 加添 [jia1 tian1] /augment/add/
+反目成仇 反目成仇 [fan3 mu4 cheng2 chou2] /to become enemies (idiom); to fall out with sb/
+可恃 可恃 [ke3 shi4] /reliable/
+吠叫 吠叫 [fei4 jiao4] /to bark/to yelp/
+吹吹拍拍 吹吹拍拍 [chui1 chui1 pai1 pai1] /to boast and flatter/
+周遊世界 周游世界 [zhou1 you2 shi4 jie4] /to travel around the world/
+和睦 和睦 [he2 mu4] /peaceful relations/harmonious/
+啜泣 啜泣 [chuo4 qi4] /to sob/
+喜不自勝 喜不自胜 [xi3 bu4 zi4 sheng4] /unable to contain one's joy (idiom)/
+單方 单方 [dan1 fang1] /unilateral/one-sided/home remedy/folk prescription(same as 丹方)/single-drug prescription (same as 奇方[ji1 fang1], one of the seven kinds of prescriptions of Chinese medicine 七方[qi1 fang1])/metaphorically. a good solution/
+回光反照 回光反照 [hui2 guang1 fan3 zhao4] /final radiance of setting sun/fig. dying flash (of lucidity or activity, prior to demise)/
+固守 固守 [gu4 shou3] /to strongly defend one's position/to be entrenched/to cling to/
+圖像互換格式 图像互换格式 [tu2 xiang4 hu4 huan4 ge2 shi4] /GIF/graphic interchange format/
+外借 外借 [wai4 jie4] /to lend (sth other than money)/to borrow/
+多多少少 多多少少 [duo1 duo1 shao3 shao3] /to some extent/more or less/
+大樹菠蘿 大树菠萝 [da4 shu4 bo1 luo2] /jackfruit/
+大鵬鳥 大鹏鸟 [da4 peng2 niao3] /roc (mythical bird of prey)/
+天生的一對 天生的一对 [tian1 sheng1 de5 yi1 dui4] /couple who were made for each other/
+太陽眼鏡 太阳眼镜 [tai4 yang2 yan3 jing4] /sunglasses/
+如廁 如厕 [ru2 ce4] /to go to the toilet/
+娃娃音 娃娃音 [wa2 wa5 yin1] /childlike voice/babyish voice/
+嫁禍於人 嫁祸于人 [jia4 huo4 yu2 ren2] /to pass the misfortune on to sb else (idiom); to blame others/to pass the buck/
+季父 季父 [ji4 fu4] /uncle (father's youngest brother)/
+它們 它们 [ta1 men5] /they (for inanimate objects)/
+安放 安放 [an1 fang4] /to lay/to place/to put in a certain place/
+家常 家常 [jia1 chang2] /the daily life of a family/
+密密實實 密密实实 [mi4 mi5 shi2 shi5] /thick/concentrated/
+對不住 对不住 [dui4 bu5 zhu4] /to let sb down/to be unfair/I'm sorry/pardon me (formal)/
+小眼角 小眼角 [xiao3 yan3 jiao3] /outer corner of the eye/
+展銷會 展销会 [zhan3 xiao1 hui4] /trade fair/sales exhibition/
+帝 帝 [di4] /emperor/
+強拉 强拉 [qiang3 la1] /to drag (sb) along (to a place)/to yank/
+徹夜 彻夜 [che4 ye4] /the whole night/
+急轉 急转 [ji2 zhuan3] /to whirl/to turn around quickly/
+恐血症 恐血症 [kong3 xue4 zheng4] /blood phobia/hemophobia/
+意味深長 意味深长 [yi4 wei4 shen1 chang2] /profound/significant/meaningful/
+感奮 感奋 [gan3 fen4] /moved and inspired/fired with enthusiasm/
+慪氣 怄气 [ou4 qi4] /to sulk/to squabble/
+戄 戄 [jue2] /to fear/to be in awe/sudden glance/
+抵債 抵债 [di3 zhai4] /to repay a debt in kind or by labor/
+拭目 拭目 [shi4 mu4] /to wipe one's eyes/fig. to remain vigilant/
+掛在嘴上 挂在嘴上 [gua4 zai5 zui3 shang5] /to pay lip service to/to keep mentioning (without doing anything)/to blather on about sth/
+搬走 搬走 [ban1 zou3] /to carry/
+撥號音 拨号音 [bo1 hao4 yin1] /dial tone/
+擾動 扰动 [rao3 dong4] /to disturb/to stir up/disturbance/agitation/turmoil/
+收列 收列 [shou1 lie4] /to list/to include/
+放射 放射 [fang4 she4] /to radiate/radioactive/
+敢為人先 敢为人先 [gan3 wei2 ren2 xian1] /to dare to be first/to pioneer (idiom)/
+敷湯藥 敷汤药 [fu1 tang1 yao4] /(coll.) to pay compensation for medical expenses/
+文武 文武 [wen2 wu3] /civil and military/
+時段 时段 [shi2 duan4] /time interval/work shift/time slot/the twelve two-hour divisions of the day/
+暗地 暗地 [an4 di4] /secretly/inwardly/
+有無 有无 [you3 wu2] /to have or have not/surplus and shortfall/tangible and intangible/corporeal and incorporeal/
+未冠 未冠 [wei4 guan1] /minor (old usage, person under 20)/
+村民 村民 [cun1 min2] /villager/
+枯水期 枯水期 [ku1 shui3 qi1] /period of low water level (winter in north China)/
+核 核 [he2] /pit/stone/nucleus/nuclear/to examine/to check/to verify/
+棒冰 棒冰 [bang4 bing1] /popsicle/
+椏杈 桠杈 [ya1 cha4] /variant of 丫杈[ya1 cha4]/
+橫飛 横飞 [heng2 fei1] /to splash across/to splatter/
+欙 欙 [lei2] /sedan/
+歐巴桑 欧巴桑 [ou1 ba5 sang1] /older female/woman of mature years (Japanese loanword)/
+死機藍屏 死机蓝屏 [si3 ji1 lan2 ping2] /blue screen of death/computer crash screen/

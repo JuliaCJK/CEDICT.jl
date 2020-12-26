@@ -1,0 +1,7 @@
+[CE-Dict]
+git-tree-sha1 = "2b96864e6b5033a3fde9751bbf41bd5f8654ead2"
+lazy = true
+
+    [[CE-Dict.download]]
+    sha256 = "cbd247926efd43724fb4a2428f8e033e10eadf1c318095e2dfe64e561563bb10"
+    url = "https://github.com/tmthyln/CEDICT.jl/releases/download/0.0.1/dict.tar.gz"

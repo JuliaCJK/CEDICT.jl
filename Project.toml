@@ -1,0 +1,11 @@
+name = "CEDICT"
+uuid = "76a33514-0aea-4d2f-abaf-6a43b94fc20c"
+authors = ["Timothy Lin <32549553+tmthyln@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+Pipe = "b98c9c47-44ae-5843-9183-064241ee97a0"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+
+[compat]
+julia = "^1.3"
