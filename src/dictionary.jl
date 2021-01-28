@@ -1,4 +1,4 @@
-using Pkg.Artifacts
+using LazyArtifacts
 
 struct DictionaryEntry
     trad
