@@ -18,7 +18,6 @@ jobs:
         os: [ubuntu-latest, windows-latest]
 
     steps:
-    # Checks-out repository under $GITHUB_WORKSPACE
     - uses: actions/checkout@v2
     - name: Setup Julia environment
       uses: julia-actions/setup-julia@v1.4
