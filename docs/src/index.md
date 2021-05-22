@@ -6,7 +6,7 @@ Still in early development!
 ```
 
 ## Installation
-This package can be installed as usual via Pkg:
+This package can be installed in the usual way via Pkg from the General Registry:
 ```julia-repl
 julia> ] add CCEDICT
 ```

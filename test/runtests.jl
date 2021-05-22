@@ -13,7 +13,7 @@ using Test
     end
 
     @testset "dictionary" begin
-        dict = load_dictionary("res/small_dict.txt")
+        dict = ChineseDictionary("res/small_dict.txt")
 
         @testset "loading" begin
             @test length(dict) == 744

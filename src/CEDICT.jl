@@ -1,6 +1,6 @@
 module CEDICT
 
-export load_dictionary, DictionaryEntry, LookupDictionary,
+export DictionaryEntry, ChineseDictionary,
 
 search_headwords, search_senses, search_pinyin
 

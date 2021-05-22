@@ -1,8 +1,8 @@
 # Creating & Loading Dictionaries
-The `load_dictionary` function is the primary method for loading a dictionary. Currently, dictionaries can only be loaded from text files, but there may be support for other formats in the future.
+Dictionaries can be loaded using the `ChineseDictionary` constructor. Currently, dictionaries can only be loaded from text files, but there may be support for other formats in the future.
 
 ```@docs
-load_dictionary
+ChineseDictionary
 ```
 
 ## File Format for a Text-Based Dictionary

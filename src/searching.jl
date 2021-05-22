@@ -6,7 +6,7 @@ using Pipe
 Produce a set of entries for which `func(entry)` returns `true`. This is considered
 an internal function and not part of the public API for this package; use at your own risk!
 """
-function search_filtered(filter_func, dict::LookupDictionary)
+function search_filtered(filter_func, dict::ChineseDictionary)
     word_entries = Set{DictionaryEntry}()
 
     for entry_list in values(dict)
@@ -32,7 +32,7 @@ julia> search_headwords(dict, "2019冠狀病毒病") .|> println;
         COVID-19, the coronavirus disease identified in 2019
 ```
 """
-search_headwords(dict::LookupDictionary, keyword) =
+search_headwords(dict::ChineseDictionary, keyword) =
     search_filtered(dict) do entry
         occursin(keyword, entry.trad) || occursin(keyword, entry.simp)
     end
@@ -55,7 +55,7 @@ julia> search_senses(dict, "fishnet") .|> println;
         fishnet stockings
 
 """
-search_senses(dict::LookupDictionary, keyword) =
+search_senses(dict::ChineseDictionary, keyword) =
     search_filtered(dict) do entry
         any(occursin.(keyword, entry.senses))
     end
@@ -83,7 +83,7 @@ julia> search_pinyin(dict, "bang shou") .|> println;
 
 ```
 """
-function search_pinyin(dict::LookupDictionary, pinyin_searchkey)
+function search_pinyin(dict::ChineseDictionary, pinyin_searchkey)
     search_regex = _convert_pinyin_regex(pinyin_searchkey)
     search_filtered(dict) do entry
         match(search_regex, entry.pinyin) != nothing

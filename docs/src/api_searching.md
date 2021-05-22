@@ -1,7 +1,7 @@
 # Searching within a Dictionary
 There are several ways to search in a dictionary, depending on what part of the dictionary entries are used and what the user is searching for. 
 
-(All of the examples are using the default dictionary.)
+(All the examples are using the default dictionary.)
 
 ```@docs
 search_headwords
