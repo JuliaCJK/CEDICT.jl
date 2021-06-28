@@ -1,7 +1,7 @@
 [cedict]
-git-tree-sha1 = "2b96864e6b5033a3fde9751bbf41bd5f8654ead2"
+git-tree-sha1 = "1f2b5e8258d111ec3cd1cd01633fdc04fc59af4e"
 lazy = true
 
     [[cedict.download]]
-    sha256 = "cbd247926efd43724fb4a2428f8e033e10eadf1c318095e2dfe64e561563bb10"
-    url = "https://github.com/tmthyln/CEDICT.jl/releases/download/0.0.1/dict.tar.gz"
+    sha256 = "c66349b13049484dfd13017e3bdb3f4aa987898f9525e3c0db6f4f9c548b075d"
+    url = "https://github.com/tmthyln/CEDICT.jl/releases/download/v0.2.2-pre/dict.tar.gz"

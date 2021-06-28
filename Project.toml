@@ -1,7 +1,7 @@
 name = "CEDICT"
 uuid = "76a33514-0aea-4d2f-abaf-6a43b94fc20c"
 authors = ["Timothy Lin <32549553+tmthyln@users.noreply.github.com>"]
-version = "0.2.1"
+version = "0.2.2"
 
 [deps]
 LazyArtifacts = "4af54fe1-eca0-43a8-85a7-787d91b784e3"
