@@ -1,4 +1,5 @@
 # Searching within a Dictionary
+
 There are several ways to search in a dictionary, depending on what part of the dictionary entries are used and what the user is searching for. 
 
 (All the examples are using the default dictionary.)
@@ -9,8 +10,11 @@ search_senses
 search_pinyin
 ```
 
+
 ## Advanced Pinyin Searching
+
 The `search_pinyin` function also supports a certain flavor of fuzzy matching and searches with missing information. For example, tone numbers are not required. In addition,
+
 - "*" will match any additional characters,
 - "?" will match up to one additional character, and
 - "+" will match one or more additional characters.
@@ -45,9 +49,9 @@ We could also instead use the metacharacters attached to pinyin letters if we do
 
 
 ## More Advanced Searching
+
 The un-exported method `search_filtered` can be used if none of the above options are powerful/flexible enough. However, this requires working with the raw `DictionaryEntry` struct and is subject to breakage in future releases (not a part of the public API).
 
 ```@docs
 CEDICT.search_filtered
 ```
-
