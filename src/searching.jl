@@ -92,10 +92,10 @@ end
 
 function _prepare_pinyin_regex(searchkey)
     re = @pipe split(searchkey, " ") |>
-            map(w -> (w == "*" ? raw"(\w+\d)*" : w), _) |> # TODO: doesn't handle spaces correctly'
-            map(w -> (w == "+" ? raw"(\w+\d)+" : w), _) |>
+            map(w -> (w == "*" ? raw"(\w+\d\s*)*" : w), _) |> # TODO: doesn't handle spaces correctly'
+            map(w -> (w == "+" ? raw"\w+\d(\s+\w+\d)*" : w), _) |>
             map(w -> (w == "?" ? raw"(\w+\d)?" : w), _) |>
-            map(w -> w * raw"\d?", _)|>
-            join(_, raw"\s")
+            map(w -> (endswith(w, r"\d") ? w : w * raw"\d?"), _) |>
+            join(_, raw"\s+")
     Regex("^$(re)\$")
 end
