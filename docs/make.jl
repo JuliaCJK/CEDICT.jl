@@ -19,7 +19,7 @@ makedocs(
 )
 
 deploydocs(
-    repo="github.com/tmthyln/CEDICT.jl.git",
+    repo="github.com/JuliaCJK/CEDICT.jl.git",
     devbranch="main",
     devurl="latest"
-    )
+)
