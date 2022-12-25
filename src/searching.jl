@@ -45,6 +45,7 @@ appear exactly in one or more of the definition senses; this behavior may change
 releases).
 
 ## Examples
+```julia-repl
 julia> search_senses(dict, "fishnet") .|> println;
 漁網 (渔网): [yu2 wang3]
         fishing net
@@ -53,7 +54,7 @@ julia> search_senses(dict, "fishnet") .|> println;
         to lift the fishnet
 網襪 (网袜): [wang3 wa4]
         fishnet stockings
-
+```
 """
 search_senses(dict::ChineseDictionary, keyword) =
     search_filtered(dict) do entry
@@ -80,17 +81,16 @@ julia> search_pinyin(dict, "bang shou") .|> println;
 幫手 (帮手): [bang1 shou3]
         helper
         assistant
-
 ```
 """
 function search_pinyin(dict::ChineseDictionary, pinyin_searchkey)
-    search_regex = _convert_pinyin_regex(pinyin_searchkey)
+    search_regex = _prepare_pinyin_regex(pinyin_searchkey)
     search_filtered(dict) do entry
         match(search_regex, entry.pinyin) != nothing
     end
 end
 
-function _convert_pinyin_regex(searchkey)
+function _prepare_pinyin_regex(searchkey)
     re = @pipe split(searchkey, " ") |>
             map(w -> (w == "*" ? raw"(\w+\d)*" : w), _) |> # TODO: doesn't handle spaces correctly'
             map(w -> (w == "+" ? raw"(\w+\d)+" : w), _) |>
