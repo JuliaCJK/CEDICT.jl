@@ -1,11 +1,19 @@
 using LazyArtifacts
 
+#===============================================================================
+# Dictionary Entries
+===============================================================================#
 struct DictionaryEntry
     trad::String
     simp::String
     pinyin::String
     senses::Vector{String}
 end
+
+traditional_headword(entry::DictionaryEntry) = entry.trad
+simplified_headword(entry::DictionaryEntry) = entry.simp
+pinyin_pronunciation(entry::DictionaryEntry) = entry.pinyin
+word_senses(entry::DictionaryEntry) = entry.senses
 
 function Base.print(io::IO, entry::DictionaryEntry)
     char_str = entry.trad == entry.simp ? entry.trad : "$(entry.trad) ($(entry.simp))"
@@ -14,8 +22,12 @@ function Base.print(io::IO, entry::DictionaryEntry)
     return nothing
 end
 
+#===============================================================================
+# Dictionary
+===============================================================================#
 struct ChineseDictionary
     entries::Dict{String, Vector{DictionaryEntry}}
+    metadata::Dict{String, String}
 
     """
         ChineseDictionary([filename])
@@ -26,24 +38,32 @@ struct ChineseDictionary
     compatibility reasons.
 
     For general use, it's the easiest to just use the default dictionary (from the CC-CEDICT project).
-    This is loaded if you don't specify a filename.
+    This is loaded if you don't specify a filename. This dictionary is updated from the official
+    project page every so often.
     """
     function ChineseDictionary(filename=joinpath(artifact"cedict", "cedict_ts.u8"))
         dict = Dict{String, Vector{DictionaryEntry}}()
+        metadata_dict = Dict{String, String}()
+
         pattern = r"^([^#\s]+) ([^\s]+) \[(.*)\] /(.+)/$"
 
         for line in eachline(filename)
-            m = match(pattern, line)
-            m === nothing && continue
+            # process lines containing metadata
+            if startswith(line, "#!") && count(==('='), line) == 1
+                key, val = split(strip(line[3:end]), "=")
+                metadata_dict[key] = val
 
-            trad, simp, pinyin, defns = String.(m.captures)
-            entry = DictionaryEntry(trad, simp, pinyin, split(defns, "/"))
+            # process lines actually containing dictionary entries
+            elseif (m = match(pattern, line)) !== nothing
+                trad, simp, pinyin, defns = String.(m.captures)
+                entry = DictionaryEntry(trad, simp, pinyin, split(defns, "/"))
 
-            dict[trad] = push!(get(dict, trad, []), entry)
-            simp != trad && (dict[simp] = push!(get(dict, simp, []), entry))
+                dict[trad] = push!(get(dict, trad, []), entry)
+                simp != trad && (dict[simp] = push!(get(dict, simp, []), entry))
+            end
         end
 
-        new(dict)
+        return new(dict, metadata_dict)
     end
 end
 
